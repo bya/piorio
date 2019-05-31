@@ -1,0 +1,22 @@
+{
+  "name": "piorio",
+  "version": "1.0.0",
+  "description": "Rio test project",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bya/piorio.git"
+  },
+  "keywords": [],
+  "author": "Magnus Byström <magnus@witmix.com> (witmix.com)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bya/piorio/issues"
+  },
+  "homepage": "https://github.com/bya/piorio#readme"
+}

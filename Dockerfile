@@ -6,7 +6,7 @@ WORKDIR /usr/src/app
 # Installing dependencies
 COPY package*.json ./
 RUN npm install
-RUN npm install -g pm2
+#RUN npm install -g pm2
 
 # Copying source files
 COPY . .
@@ -14,7 +14,8 @@ COPY . .
 # Building app
 RUN npm run build
 ENV NODE_ENV=production
-ENV PORT=5000
-EXPOSE 5000
+ENV PORT=3000
+EXPOSE 3000
 # Running the app
-CMD pm2 start --no-daemon ./src/server.js
+#CMD pm2 start --no-daemon ./src/server.js
+CMD npm run start
